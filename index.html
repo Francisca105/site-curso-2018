@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+		<!--Comentários-->
+		<meta charset="utf-8"> <!--Colocar acentos nas palavras-->
+		<title>Site Exemplo</title> <!--Título da aba do browser-->
+		<meta name="viewport" content="width=device-width,initial-scale"> <!--Ajusta-se ao ecrã-->
+		<link rel="stylesheet" type="text/css" href="css/style.css"> <!--Vai buscar a formatação do nosso site ficheiro externo que vai ter nome de style.css -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> <!--Vai buscar imagens de icones para o nosso site-->
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700"> <!--Vai buscar o tipo de letra para o nosso site-->
+		<link rel="icon" href="img/icon.png"> <!--Imagem da aba do site (a imagem tem q ser 56x56 e tem que se guardar na pasta img)-->
+</head>
+	
+	<body>
+		<header class="cabecalho"> <!--Não pode ter ç ou acentos -->
+				<a href="index.html"><h1 class="logo">Site Exemplo</h1></a> <!--titulo prinipal-->
+				<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button> <!--botão-->
+				<nav class="menu">
+					<a class="btn-close"><i class="fa fa-times" aria-hidden="true"></i></a> <!--X(botão com hiperligação)-->
+					<ul>
+						<li><a href="#">Home</a></li> <!--Redirecionar para Home-->
+						<li><a href="#">Vips</a></li> <!--Redirecionar para Exemplo 1-->
+						<li><a href="#">Unbans</a></li> <!--Redirecionar para Exemplo 2-->
+						<li><a href="#">Sobre nós</a></li> <!--Redirecionar para Exemplo 3-->
+					</ul>
+				</nav>
+		</header>
+		<div class="banner">
+			<div class="title">
+				 <h2> TEXTO </h2>
+				 <h3> TEXTO </h3>
+		</div>
+		<div class="button">
+			<button class="btn-registrar">Registrar<i class="fa fa-arrow-circle-right"></i></button> <!--botão de registrar-->
+			<button class="sobre">Sobre<i class="fa fa-question-circle"></i></button> <!--botao de sobre-->
+		</div>
+		
+		</div>
+		<main class="servicos">
+			<article class="servico">
+				<a href="#"> <img src="img/01.png"></a><!--imagem 01(275x183)-->
+				<div class="inner">
+					<a href="#"> Texto de exemplo </a> <!--Texto principal-->
+					<h4> Mais um exemplo de texto  </h4> <!--Legenda-->
+					<p> Paragravo de texto. </p> <!--Paragrafo-->
+				</div>
+			</article>
+			<article class="servico">
+				<a href="#"> <img src="img/02.png"></a><!--imagem 02(275x183)-->
+				<div class="inner">
+					<a href="#"> Texto de exemplo 2 </a> <!--Texto principal-->
+					<h4> Mais um exemplo de texto 2  </h4> <!--Legenda-->
+					<p> Paragravo de texto 2. </p> <!--Paragrafo-->					
+				</div>
+			</article>
+			<article class="servico">
+				<a href="#"> <img src="img/03.png"></a><!--imagem 03(275x183)-->
+				<div class="inner">
+					<a href="#"> Texto de exemplo 3 </a> <!--Texto principal-->
+					<h4> Mais um exemplo de texto 3  </h4> <!--Legenda-->
+					<p> Paragravo de texto do exemplo 3. </p> <!--Paragrafo-->
+				</div>
+			</article>
+		</main> 
+		<section class="newsletter">
+		<h2>Registrar</h2>
+		<h3>Registre-se para receber as novidades!</h3>
+		<form>
+			<input type="email" name="email" placeholder="Seu email">
+			<button>Registrar</button>
+		</form>
+		</section>
+		<footer class="rodape">
+			<div class="social-icons">
+				<a href="#"><i class="fa fa-facebook"></i></a> <!--Redes Sociais-->
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-google"></i></a>				
+				<a href="#"><i class="fa fa-instagram"></i></a>
+				<a href="#"><i class="fa fa-envelope"></i></a>					
+				<a href="#"><i class="fa fa-youtube"></i></a>				
+			</div>
+			<p class="copyright">Copyright &copy; 2018. Todos os direitos reservados.</p>
+		</footer>
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script> $(".btn-menu").click(function(){
+					$(".menu").show();
+			});
+				$(".btn-close").click(function(){
+					$(".menu").hide();
+			});
+		</script>
+	</body>
+</html>
